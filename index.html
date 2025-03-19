@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل الملفات إلى PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- رابط Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="card">
+            <!-- أيقونة PDF -->
+            <div class="pdf-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <h1>تحويل الملفات إلى PDF</h1>
+            <p>قم بتحميل ملفك وستحصل على نسخة PDF بجودة عالية!</p>
+            <form id="uploadForm">
+                <label for="fileInput" class="file-label">
+                    <span>اختر ملفًا</span>
+                    <input type="file" id="fileInput" accept=".doc, .docx, .txt, .jpg, .png" required>
+                </label>
+                <button type="submit">تحويل إلى PDF</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
