@@ -32,15 +32,17 @@ body {
 /* التصميم العام */
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* توزيع العناصر بين اليسار واليمين */
     align-items: center;
     height: 100vh;
+    padding: 0 15%; /* إضافة بعض المساحة على الجانبين */
 }
 
+/* البطاقة على اليسار */
 .card {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -109,21 +111,4 @@ p {
 button {
     background: #2575fc;
     color: #fff;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    width: 100%;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background: #1a5bbf;
-    transform: translateY(-3px);
-}
-
-/* الرسائل */
-#message {
-    margin-top: 1.5rem
+    border: none
